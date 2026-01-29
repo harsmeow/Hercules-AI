@@ -1,16 +1,34 @@
-# React + Vite
+# Hercules AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and clean AI chat interface built with React.
 
-Currently, two official plugins are available:
+## Features & How They Work
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1. Smart Chat Titles
+* **How it works:** When you start a chat, the app takes the first **5 words** of your first message and makes it the title. 
+* **The "Clean" Look:** If you type one extremely long word, the sidebar automatically adds "..." so it never breaks the layout or creates ugly scrollbars.
 
-## React Compiler
+### 2. Dark & Light Mode
+* **How it works:** You can switch between Light, Dark, or System themes in the Settings. 
+* **Memory:** The app remembers your choice. If you pick Dark mode, it will stay dark even if you refresh the page.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 3. Persistent History
+* **How it works:** Your chats are saved to your browser's **Local Storage**. This means you can close the browser and come back later, and your conversations will still be there.
 
-## Expanding the ESLint configuration
+### 4. Export & Delete
+* **How it works:** Click the three dots (⋮) on any chat to:
+    * **Export:** Download your chat as a `.txt` file to your computer.
+    * **Delete:** Remove the chat forever.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 5. Fast Navigation
+* **How it works:** Uses "React Router" to switch between the Chat page and Settings page instantly without the screen flickering or reloading.
+
+## How to Run it Locally
+
+1. **Install:** Run `npm install` to get the necessary files.
+2. **Start:** Run `npm run dev` to open the app in your browser.
+
+## Tech Used
+* **React** (The Logic)
+* **Tailwind CSS** (The Design)
+* **React Router** (Moving between pages)
