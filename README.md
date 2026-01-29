@@ -1,6 +1,8 @@
 # Hercules AI
-
 A simple and clean AI chat interface built with React.
+
+## Live Demo
+**Check out the live app here:** [👉 https://hercules-ai.vercel.app/](https://hercules-ai.vercel.app/)
 
 ## Features & How They Work
 
